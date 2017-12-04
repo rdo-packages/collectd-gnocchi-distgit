@@ -100,7 +100,7 @@ rm -rf %{pypi_name}.egg-info
 %license LICENSE
 %doc README.rst
 %{python3_sitelib}/collectd_gnocchi
-%{python3_sitelib}/collectd_gnocchi-%{version}-py?.?.egg-info
+%{python3_sitelib}/collectd_gnocchi-%{version}*.egg-info
 %endif
 
 %changelog
