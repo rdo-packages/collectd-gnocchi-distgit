@@ -13,8 +13,8 @@ Release:        XXX
 Summary:        Gnocchi storage plugin for collectd
 
 License:        ASL 2.0
-URL:            https://github.com/jd/collectd-gnocchi
-Source0:        https://files.pythonhosted.org/packages/source/c/%{pypi_name}/%{pypi_name}-%{version}.tar.gz
+URL:            https://github.com/gnocchixyz/collectd-gnocchi
+Source0:        https://github.com/gnocchixyz/collectd-gnocchi/archive/%{version}.tar.gz#/%{name}-%{version}.tar.gz
 BuildArch:      noarch
 
 BuildRequires:  python2-devel
@@ -93,14 +93,14 @@ rm -rf %{pypi_name}.egg-info
 %license LICENSE
 %doc README.rst
 %{python2_sitelib}/collectd_gnocchi
-%{python2_sitelib}/collectd_gnocchi-%{version}*.egg-info
+%{python2_sitelib}/collectd_gnocchi-*-py*.egg-info
 
 %if 0%{?with_python3} > 0
 %files -n python3-%{pypi_name}
 %license LICENSE
 %doc README.rst
 %{python3_sitelib}/collectd_gnocchi
-%{python3_sitelib}/collectd_gnocchi-%{version}*.egg-info
+%{python3_sitelib}/collectd_gnocchi-*-py*.egg-info
 %endif
 
 %changelog
