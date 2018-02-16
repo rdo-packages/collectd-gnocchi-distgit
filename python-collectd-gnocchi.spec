@@ -18,8 +18,8 @@ Source0:        https://files.pythonhosted.org/packages/source/c/%{pypi_name}/%{
 BuildArch:      noarch
 
 BuildRequires:  python2-devel
-BuildRequires:  python2-pbr >= 1.4
-BuildRequires:  python-setuptools
+BuildRequires:  python2-pbr >= 2.0.0
+BuildRequires:  python2-setuptools
 BuildRequires:  git
 Requires:       collectd-python
 
@@ -35,9 +35,8 @@ be created correctly, be ...
 Summary:        Gnocchi storage plugin for collectd
 %{?python_provide:%python_provide python2-%{pypi_name}}
 
-Requires:       python-gnocchiclient >= 4.0.0
-Requires:       python-keystoneauth1 >= 2.0.0
-Requires:       python2-pbr >= 1.4
+Requires:       python2-gnocchiclient >= 4.0.0
+Requires:       python2-keystoneauth1 >= 3.3.0
 %description -n python2-%{pypi_name}
  collectdgnocchi This is an output plugin for collectd_ that send metrics to
 Gnocchi_. It will create a resource type named _collectd_ (by default) and a
@@ -56,8 +55,7 @@ BuildRequires:  python3-pbr
 BuildRequires:  python3-setuptools
 
 Requires:       python3-gnocchiclient >= 4.0.0
-Requires:       python3-keystoneauth1 >= 2.0.0
-Requires:       python3-pbr >= 1.4
+Requires:       python3-keystoneauth1 >= 3.3.0
 %description -n python3-%{pypi_name}
  collectdgnocchi This is an output plugin for collectd_ that send metrics to
 Gnocchi_. It will create a resource type named _collectd_ (by default) and a
