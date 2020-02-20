@@ -5,16 +5,16 @@
 %global pyver 2
 %endif
 %global pyver_bin python%{pyver}
-%global pyver_sitelib %python%{pyver}_sitelib
-%global pyver_install %py%{pyver}_install
-%global pyver_build %py%{pyver}_build
+%global pyver_sitelib %{expand:%{python%{pyver}_sitelib}}
+%global pyver_install %{expand:%{py%{pyver}_install}}
+%global pyver_build %{expand:%{py%{pyver}_build}}
 # End of macros for py2/py3 compatibility
 %global pypi_name collectd-gnocchi
 %{!?upstream_version: %global upstream_version %{version}%{?milestone}}
 
 Name:           python-%{pypi_name}
-Version:        XXX
-Release:        XXX
+Version:        1.7.1
+Release:        1%{?dist}
 Summary:        Gnocchi storage plugin for collectd
 
 License:        ASL 2.0
@@ -72,3 +72,6 @@ rm -rf %{pypi_name}.egg-info
 %{pyver_sitelib}/collectd_gnocchi-*-py*.egg-info
 
 %changelog
+* Fri Sep 14 2018 RDO <dev@lists.rdoproject.org> 1.7.1-1
+- Update to 1.7.1
+
