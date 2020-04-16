@@ -1,0 +1,8 @@
+Code-Review+2: Matthias Runge <mrunge@matthias-runge.de>
+Workflow+1: Matthias Runge <mrunge@matthias-runge.de>
+Verified+2: Zuul CI <zuul@review.rdoproject.org>
+Submitted-by: Zuul CI <zuul@review.rdoproject.org>
+Submitted-at: Thu, 16 Apr 2020 15:04:28 +0000
+Reviewed-on: https://review.rdoproject.org/r/26539
+Project: openstack/collectd-gnocchi-distgit
+Branch: refs/heads/rpm-master
