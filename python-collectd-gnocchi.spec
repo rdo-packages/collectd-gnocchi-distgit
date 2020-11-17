@@ -14,7 +14,7 @@ BuildArch:      noarch
 BuildRequires:  python3-devel
 BuildRequires:  python3-pbr >= 2.0.0
 BuildRequires:  python3-setuptools
-BuildRequires:  git
+BuildRequires:  git-core
 Requires:       collectd-python
 
 %description
