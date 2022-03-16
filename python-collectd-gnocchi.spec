@@ -2,8 +2,8 @@
 %{!?upstream_version: %global upstream_version %{version}%{?milestone}}
 
 Name:           python-%{pypi_name}
-Version:        XXX
-Release:        XXX
+Version:        1.7.1
+Release:        1%{?dist}
 Summary:        Gnocchi storage plugin for collectd
 
 License:        ASL 2.0
@@ -59,3 +59,6 @@ rm -rf %{pypi_name}.egg-info
 %{python3_sitelib}/collectd_gnocchi-*-py*.egg-info
 
 %changelog
+* Wed Mar 16 2022 RDO <dev@lists.rdoproject.org> 1.7.1-1
+- Update to 1.7.1
+
