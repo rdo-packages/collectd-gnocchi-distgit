@@ -4,8 +4,8 @@
 %global excluded_brs doc8 bandit pre-commit hacking flake8-import-order
 
 Name:           python-%{pypi_name}
-Version:        XXX
-Release:        XXX
+Version:        1.7.1
+Release:        2%{?dist}
 Summary:        Gnocchi storage plugin for collectd
 
 License:        Apache-2.0
@@ -73,3 +73,6 @@ done
 %{python3_sitelib}/collectd_gnocchi*.dist-info
 
 %changelog
+* Fri Mar 15 2024 RDO <dev@lists.rdoproject.org> 1.7.1-2
+- Rebuild 1.7.1 in Caracal
+
